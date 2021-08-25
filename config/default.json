@@ -1,0 +1,10 @@
+{
+    "db-connections": {
+        "mongodb": {
+            "host": "cluster0.w7lpm.mongodb.net",
+            "user": "juan_admin",
+            "password": "Ig31v0zg7Bjmj3gl",
+            "dbName": "apiDb"
+        }    
+    }
+}
