@@ -13,5 +13,8 @@
     "academic"
   ],
   "author": "Juan Manuel Ocampo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mongoose-unique-validator": "^2.0.3"
+  }
 }
