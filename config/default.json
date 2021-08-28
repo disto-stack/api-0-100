@@ -5,6 +5,14 @@
             "user": "juan_admin",
             "password": "Ig31v0zg7Bjmj3gl",
             "dbName": "apiDb"
-        }    
-    }
+        } 
+    },
+    "secretKeys": {
+        "cryptojs": "rcKus=jw_IwgxK"
+    },
+    "roles": {
+        "student": 1,
+        "teacher": 2
+    },
+    "server-port": 3000
 }

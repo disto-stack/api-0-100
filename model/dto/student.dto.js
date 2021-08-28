@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 
 const schema = require('../schemas/student.schema');
+const db = require('../db-connection/mongodb');
+
+db();
 
 schema.statics = {
     create: function(data, callback) {

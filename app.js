@@ -1,0 +1,29 @@
+const express = require('express');
+const config = require('config');
+const bodyParser = require('body-parser');
+
+const app = express();
+const port = config.get('server-port');
+
+const jsonParser = bodyParser.json();
+const urlEncodedParser = bodyParser.urlencoded({ extended: true });
+
+app.use(jsonParser);
+app.use(urlEncodedParser);
+
+const ipLocator = require('./middleware/getIpAdress');
+app.use('*', ipLocator);
+
+app.get('/', (req, res, next) => {
+    res.send(`
+        <h1>Welcome to REST-API</h1>
+    `)
+});
+
+const studentRoutes = require('./routes/student.routes');
+
+studentRoutes(app);
+
+app.listen(port, () => {
+    console.log('Server running on port', port);
+});
