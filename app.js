@@ -21,8 +21,14 @@ app.get('/', (req, res, next) => {
 });
 
 const studentRoutes = require('./routes/student.routes');
+const teacherRoutes = require('./routes/teacher.routes');
+const periodRoutes = require('./routes/period.routes');
+const courseRoutes = require('./routes/course.routes');
 
 studentRoutes(app);
+teacherRoutes(app);
+periodRoutes(app);
+courseRoutes(app);
 
 app.listen(port, () => {
     console.log('Server running on port', port);

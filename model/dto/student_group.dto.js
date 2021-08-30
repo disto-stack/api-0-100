@@ -17,7 +17,7 @@ schema.statics = {
         this.findOneAndUpdate(query, {$set: data}, callback);
     },
     delete: function(query, callback) {
-        this.findOneAndDelete(query);
+        this.findOneAndDelete(query, callback);
     }
 };
 
