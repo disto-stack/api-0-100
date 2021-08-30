@@ -13,6 +13,9 @@ schema.statics = {
     getByCode: function(query, callback) {
         this.find(query, callback);
     },
+    login: function(query, callback) {
+        this.find(query, callback)
+    },
     update: function(query, data, callback) {
         this.findOneAndUpdate(query, {$set: data}, callback);
     },

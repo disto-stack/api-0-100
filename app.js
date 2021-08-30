@@ -20,6 +20,12 @@ app.get('/', (req, res, next) => {
     `)
 });
 
+const userRoutes = require('./routes/user.routes');
+userRoutes(app);
+
+const verifyToken = require('./middleware/verifyToken');
+app.use(verifyToken);
+
 const studentRoutes = require('./routes/student.routes');
 const teacherRoutes = require('./routes/teacher.routes');
 const periodRoutes = require('./routes/period.routes');

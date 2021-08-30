@@ -8,7 +8,8 @@
         } 
     },
     "secretKeys": {
-        "cryptojs": "rcKus=jw_IwgxK"
+        "cryptojs": "rcKus=jw_IwgxK",
+        "jwt": ":LwFV4_gg+pKK+"
     },
     "roles": {
         "student": 1,
